@@ -17,49 +17,54 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="pt-2 text-lg">
-        <div className="mx-auto">
-          <img
-            src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg"
-            alt=""
-            className="object-cover h-[120px] mx-auto"
-          />
+      <main className="pt-2 text-lg lg:flex lg:items-center lg:justify-center lg:pt-40 lg:gap-20">
+        <div className="lg:mb-32 mb-5">
+          <div className="mx-auto">
+            <img
+              src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg"
+              alt=""
+              className="object-cover h-[100px] lg:h-[120px] mx-auto lg:mx-0"
+            />
+          </div>
+          <h1 className="text-center text-black px-10 text-xl lg:mb-8 lg:text-[1.6rem] lg:font-medium lg:max-w-[500px] lg:text-left lg:pl-8">
+            Connect with friends and the world around you on Facebook.
+          </h1>
         </div>
-        <h1 className="text-center text-black px-10 text-xl mb-8">
-          Connect with friends and the world around you on Facebook.
-        </h1>
-        <div className="bg-white flex flex-col gap-3 py-4 px-4 mx-8 rounded-md shadow-lg">
-          <input
-            type="text"
-            placeholder="Email or phone number"
-            className="border p-2 rounded-md  outline-0 focus:border-sky-500 focus:shadow-sky-200 focus:shadow-sm caret-sky-500"
-            autoFocus
-            ref={emailInputRef}
-          />
-          <input
-            type="text"
-            placeholder="Password"
-            className="border p-2 rounded-md  outline-0 focus:border-sky-500 focus:shadow-sky-200 focus:shadow-sm caret-sky-500"
-          />
 
-          <button className="bg-[#1877f2] rounded-[6px] py-[10px] text-white font-bold">
-            Log In
-          </button>
+        <div className="">
+          <div className="bg-white flex flex-col gap-3 py-4 px-4 x rounded-md shadow-lg lg:w-[396px] w-[90%] mx-auto">
+            <input
+              type="text"
+              placeholder="Email or phone number"
+              className="border p-2 rounded-md  outline-0 focus:border-sky-500 focus:shadow-sky-200 focus:shadow-sm caret-sky-500"
+              autoFocus
+              ref={emailInputRef}
+            />
+            <input
+              type="text"
+              placeholder="Password"
+              className="border p-2 rounded-md  outline-0 focus:border-sky-500 focus:shadow-sky-200 focus:shadow-sm caret-sky-500"
+            />
 
-          <p className="text-[#1877f2] text-center text-sm py-2 ">
-            Forgot password?
+            <button className="bg-[#1877f2] rounded-[6px] py-[10px] hover:bg-blue-600 transition-all duration-120 text-white font-bold">
+              Log In
+            </button>
+
+            <p className="text-[#1877f2] text-center text-sm py-2 hover:underline cursor-pointer">
+              Forgot password?
+            </p>
+            <hr />
+            <button className="bg-[#42b72a] rounded-[6px] py-[8px] hover:bg-green-500 transition-all duration-120 text-white w-[70%] lg:w-[50%] mx-auto font-bold my-2">
+              Create new account
+            </button>
+          </div>
+          <p className="text-center text-[.8rem] my-4 lg:text-[.9rem] ">
+            <span className="font-bold">Create a Page</span> for a celebrity,
+            brand or business.
           </p>
-          <hr />
-          <button className="bg-[#42b72a] rounded-[6px] py-[8px] text-white w-[70%] mx-auto font-bold my-2">
-            Create new account
-          </button>
         </div>
-        <p className="text-center text-[.8rem] my-4 ">
-          <span className="font-bold">Create a Page</span> for a celebrity,
-          brand or business.
-        </p>
       </main>
-      <footer className="bg-white mt-16">
+      <footer className="bg-white mt-16 lg:px-60 lg:mt-60">
         <div className="py-4 px-8 text-gray-400">
           <div className="flex text-[.6rem] gap-2 ">
             <p>English (US)</p>
